@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    name: ${artifactId}
+    url: jdbc:mysql://mysql地址/test
+    username: 用户名
+    password: 密码
+  flyway:
+#    locations: filesystem:/project/folder
+    locations: classpath:/db
+    baseline-on-migrate: true
+    enabled: true #启用flyway
